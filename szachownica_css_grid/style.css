@@ -1,0 +1,32 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(5, 12vw);
+    grid-template-rows: repeat(5, 12vw);
+    background-color: #ddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30vw 0 0 -30vw;
+    /* grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 60vw;
+    height: 60vw; */
+    /* pierwszy sposób:
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* drugi sposób:
+     top: calc(50% - 30vw);
+    left: calc(50% - 30vw); */
+}
+
+div {
+    background-color: white;
+}
+
+div:nth-child(2n + 1) {
+    background-color: blue;
+}
+
+/*even - 2n +1;
+odd - 2n*/

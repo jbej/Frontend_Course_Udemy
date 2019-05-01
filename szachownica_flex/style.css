@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    width: 50vw;
+    height: 50vw;
+    /* background-color: #333; */
+}
+
+div {
+    flex-basis: 20%;
+    height: 20%;
+    background-color: rgb(46, 18, 112);
+}
+
+div:nth-child(odd) {
+    background-color: white;
+}
